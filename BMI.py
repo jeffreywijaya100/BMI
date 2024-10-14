@@ -1,6 +1,6 @@
 nama= input("Masukkan nama anda: ")
 sex= input("Masukkan jenis kelamin anda (L atau P): ")
-while sex != "P" or sex!= "L":
+while sex != "P" and sex!= "L":
     sex= input("Masukkan jenis kelamin anda (L atau P): ")
     if sex=='P' or sex=='L':
         break
@@ -9,6 +9,7 @@ BB= float(input("Masukkan berat bada anda dalam Kg: "))
 TB= float(input("Masukkan tinggi anda dalam Cm: "))
 
 BMI= BB / (TB/100)**2
+print('BMI =', BMI)
 
 if BMI < 18.5 and sex == 'L':
     print("Underweight")
